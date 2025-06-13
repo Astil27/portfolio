@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#F5F5F5] dark:bg-gray-900 text-gray-900 dark:text-white;
+  overflow-x: hidden;
+}
+
+/* Custom styles for vertical timeline */
+.vertical-timeline-element-content {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  padding: 2rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .vertical-timeline-element-content {
+    padding: 1.25rem !important;
+  }
+  
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    margin-top: 0.5rem !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid rgb(59, 130, 246) !important;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation for skill bars */
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-base;
+  }
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Touch-friendly padding for buttons and interactive elements */
+@media (max-width: 768px) {
+  button, 
+  a[href], 
+  input, 
+  textarea, 
+  .interactive {
+    @apply p-3;
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

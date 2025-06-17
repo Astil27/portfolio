@@ -103,9 +103,7 @@ export function App() {
                     repeat={Infinity}
                   />
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg mb-4">
-                  🎓 MSc Computer Science Student (2023–2025)
-                </p>
+{/*                 F */}
                 <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0">
                   I love turning data into insights and building real-world tech solutions.
                 </p>
@@ -533,7 +531,7 @@ export function App() {
                     <div>
                       <h4 className="font-medium text-gray-900 dark:text-white">Location</h4>
                       <span className="text-gray-600 dark:text-gray-400">
-                        Bengaluru, India
+                        Chennai, India
                       </span>
                     </div>
                   </div>
@@ -656,7 +654,7 @@ export function App() {
             
             <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
-                Made with ❤️ using Srcbook | &copy; {new Date().getFullYear()} Astil Raj T. All rights reserved.
+                &copy; {new Date().getFullYear()} Astil Raj T. All rights reserved.
               </p>
               <a 
                 href="#home"

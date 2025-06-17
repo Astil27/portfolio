@@ -9,7 +9,6 @@ import SectionTitle from './components/SectionTitle';
 import { ArrowUp, BookOpen, Briefcase, FileCode, FileCode2, Github, Linkedin, Mail, MapPin, Phone, Send, UserRound } from 'lucide-react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { useInView } from 'react-intersection-observer';
 import { useForm } from 'react-hook-form';
 import './index.css';
 
